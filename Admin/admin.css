@@ -1,0 +1,123 @@
+/* Basic Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background color for better readability */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em; /* Increase font size for headings */
+    color: #343a40; /* Darker color for better contrast */
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"], input[type="file"] {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px; /* Add padding for better input field appearance */
+    border-radius: 4px; /* Rounded corners for input fields */
+    border: 1px solid #ced4da; /* Light border color */
+}
+
+button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em; /* Consistent button text size */
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+}
+
+button.edit-item {
+    background-color: #ffc107;
+    color: black;
+}
+
+button.remove-item {
+    background-color: #dc3545;
+    color: white;
+}
+
+button.add-variety {
+    background-color: #17a2b8;
+    color: white;
+}
+
+#imagePreview {
+    max-width: 100px;
+    height: auto;
+    border: 1px solid #ddd; /* Light border for image preview */
+    border-radius: 4px; /* Rounded corners for image preview */
+}
+
+/* Item List Styling */
+.item-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 25px; /* Space between items */
+    padding: 25px;
+}
+
+/* Styling Each Item */
+.item {
+    background-color: #ffffff; /* White background for cleaner look */
+    border: 1px solid #dee2e6; /* Light border color */
+    border-radius: 8px;
+    width: 100%; /* Full width for responsive design */
+    max-width: 350px; /* Maximum width to prevent items from being too large */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Space out content vertically */
+    text-align: center;
+    overflow: hidden;
+    padding: 15px; /* Padding for better spacing */
+}
+
+.item img {
+    width: 100%; /* Ensure image fits the width of the item */
+    height: 210px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensure images cover the container without distortion */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.item h3 {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+/* Button Container Styling */
+.button-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap buttons if necessary */
+    justify-content: space-between; /* Align buttons in a row */
+    width: 100%; /* Full width of item */
+    margin-top: auto; /* Push buttons to the bottom of the item */
+    gap: 10px; /* Space between buttons */
+}
+
+.item button {
+    flex: 1; /* Allow buttons to grow equally */
+    margin: 0; /* Remove default margin */
+    min-width: 100px; /* Ensure buttons have a minimum width */
+}

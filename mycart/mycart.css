@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+}
+#nav{
+    text-align: center; 
+    background-color: gray;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+}

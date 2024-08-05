@@ -1,0 +1,90 @@
+body {
+    background-color: #1574d4;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+#itemList .card {
+    transition: transform 0.2s;
+    margin-bottom: 20px;
+}
+
+#itemList .card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
+   
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    font-size: 250px; /* Increased font size */
+    font-weight: 500; /* Bold font weight */
+    color: #09fffb;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for contrast */
+}
+
+.navbar .d-flex a {
+    width: 130px;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+.mycart-btn {
+    background-color: #ffc107 !important;
+    border-color: #ffc107 !important;
+    color: #000 !important;
+}
+
+.mycart-btn:hover {
+    background-color: #e0a800 !important;
+    border-color: #d39e00 !important;
+    color: #000 !important;
+}
+
+.admin-login-btn {
+    background-color: #17a2b8 !important;
+    border-color: #17a2b8 !important;
+    color: #fff !important;
+}
+
+.admin-login-btn:hover {
+    background-color: #138496 !important;
+    border-color: #117a8b !important;
+    color: #fff !important;
+}
+
+.btn-primary, .btn-secondary {
+    margin: 5px;
+}
+
+@media (min-width: 576px) {
+    .card {
+        height: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-img-top {
+        height: 150px;
+    }
+}

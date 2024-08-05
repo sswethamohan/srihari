@@ -1,0 +1,23 @@
+/* payment.css */
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 500px;
+}
+
+.card {
+    border: 1px solid #e3e6f0;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+}
+
+.btn-primary {
+    background-color: #4e73df;
+    border-color: #4e73df;
+}
+
+.btn-primary:hover {
+    background-color: #2e59d9;
+    border-color: #2653d4;
+}

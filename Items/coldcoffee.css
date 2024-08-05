@@ -1,0 +1,94 @@
+/* Same CSS as milkshake.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#nav {
+    text-align: center; 
+    background-color: rgb(180, 245, 223);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 10px;
+}
+
+#menuContainer {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line if they exceed the container width */
+    gap: 25px; /* Space between items */
+    justify-content: center; /* Center items horizontally */
+}
+
+.menu-item {
+    flex: 1 1 calc(33.333% - 30px); /* Each item takes up roughly one-third of the container width, minus the gap */
+    max-width: calc(33.333% - 30px); /* Prevents items from growing too large */
+    box-sizing: border-box; /* Ensures padding and border are included in the item's width */
+    text-align: center; /* Center align text inside each item */
+    padding: 10px; /* Add padding for spacing inside each item */
+    display: flex;
+    flex-direction: column; /* Ensure all items stack vertically */
+    align-items: center; /* Center content horizontally */
+    background: #fff; /* White background for better visibility */
+    border: 1px solid #ddd; /* Border around the item */
+    border-radius: 8px; /* Rounded corners for the item */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    height: 100%; /* Ensure all items stretch to the same height */
+    max-height: 400px; /* Maximum height for consistency */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure the card takes full height of its container */
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Set a consistent height for images */
+    object-fit: cover; /* Cover the area of the image container */
+}
+
+.card-body {
+    padding: 15px;
+    flex-grow: 1; /* Allow the body to expand and fill available space */
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Primary button color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Add padding to the button */
+    border-radius: 5px; /* Rounded corners for the button */
+    color: #fff; /* Button text color */
+    font-size: 1rem; /* Font size for the button */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Style for "My Cart" button positioning */
+.position-relative {
+    position: relative; /* Ensure the positioning context for child elements */
+}
+
+.my-cart-button {
+    position: absolute;
+    top: 1px; /* Adjust vertical position */
+    right: 10px; /* Move the button to the right side */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+}
